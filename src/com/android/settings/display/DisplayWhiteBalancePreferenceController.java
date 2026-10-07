@@ -32,6 +32,9 @@ public class DisplayWhiteBalancePreferenceController extends TogglePreferenceCon
 
     @Override
     public int getAvailabilityStatus() {
+        if (!mContext.getResources().getBoolean(R.bool.config_show_display_white_balance)) {
+            return UNSUPPORTED_ON_DEVICE;
+        }
         ColorDisplayManager cdm = getColorDisplayManager();
         // Display white balance is only valid in linear light space. COLOR_MODE_SATURATED
         // implies unmanaged color mode, and hence unknown color processing conditions.
