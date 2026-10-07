@@ -6406,5 +6406,19 @@
             </intent-filter>
         </receiver>
 
+        <!-- Lenovo PenService opens its pen settings through the stock Lenovo
+             settings action (stylus toolbox). On a large screen embed the page
+             next to the Settings home; otherwise open it directly (TB520FU). -->
+        <activity android:name=".lenovo.LenovoPlaceHolderActivity"
+            android:exported="true"
+            android:excludeFromRecents="true"
+            android:noHistory="true"
+            android:theme="@android:style/Theme.NoDisplay">
+            <intent-filter>
+                <action android:name="com.android.settings.PLACE_HOLDER" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
     </application>
 </manifest>
