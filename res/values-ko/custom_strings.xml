@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="battery_saver_refresh_rate_title">절전 모드에서 주사율 제한</string>
+    <string name="battery_saver_refresh_rate_summary">절전 모드가 켜져 있을 때 화면 주사율을 60Hz로 제한합니다</string>
+</resources>
