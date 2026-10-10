@@ -17,6 +17,8 @@
 package com.android.settings.fuelgauge.batterysaver;
 
 import static android.provider.Settings.System.LOW_POWER_REFRESH_RATE;
+import static com.android.internal.display.RefreshRateSettingsUtils.DEFAULT_REFRESH_RATE;
+import static com.android.internal.display.RefreshRateSettingsUtils.findHighestRefreshRateForDefaultDisplay;
 
 import android.content.Context;
 import android.provider.Settings;
@@ -32,7 +34,10 @@ public class BatterySaverRefreshRatePreferenceController extends TogglePreferenc
 
     @Override
     public boolean isChecked() {
-        int val = Settings.System.getInt(mContext.getContentResolver(), LOW_POWER_REFRESH_RATE, 1);
+        final int defaultValue = mContext.getResources().getBoolean(
+                com.android.internal.R.bool.config_lowPowerRefreshRateDefault) ? 1 : 0;
+        int val = Settings.System.getInt(
+                mContext.getContentResolver(), LOW_POWER_REFRESH_RATE, defaultValue);
         return val == 1;
     }
 
@@ -44,7 +49,8 @@ public class BatterySaverRefreshRatePreferenceController extends TogglePreferenc
 
     @Override
     public int getAvailabilityStatus() {
-        return mContext.getResources().getBoolean(R.bool.config_show_smooth_display) ? AVAILABLE : UNSUPPORTED_ON_DEVICE;
+        return Math.round(findHighestRefreshRateForDefaultDisplay(mContext)) > DEFAULT_REFRESH_RATE
+                ? AVAILABLE : UNSUPPORTED_ON_DEVICE;
     }
 
     @Override
