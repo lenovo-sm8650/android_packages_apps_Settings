@@ -6406,6 +6406,12 @@
             </intent-filter>
         </receiver>
 
+        <!-- Same-UID pen settings can open Gboard in the current Settings task. -->
+        <activity android:name=".inputmethod.StylusHandwritingSettingsActivity"
+            android:exported="false"
+            android:noHistory="true"
+            android:theme="@android:style/Theme.NoDisplay" />
+
         <!-- Lenovo PenService opens its pen settings through the stock Lenovo
              settings action (stylus toolbox). On a large screen embed the page
              next to the Settings home; otherwise open it directly (TB520FU). -->
