@@ -22,6 +22,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.os.Process;
+import android.text.TextUtils;
 import android.util.ArrayMap;
 import android.util.ArraySet;
 import android.util.SparseIntArray;
@@ -30,6 +31,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
 import com.android.internal.util.ArrayUtils;
+import com.android.settings.R;
 import com.android.settings.core.InstrumentedPreferenceFragment;
 import com.android.settings.fuelgauge.batteryusage.BatteryAdvanceInfoController;
 import com.android.settings.fuelgauge.batteryusage.BatteryAdvanceInfoDialog;
@@ -226,7 +228,12 @@ public class PowerUsageFeatureProviderImpl implements PowerUsageFeatureProvider 
 
     @Override
     public Intent getResumeChargeIntent(boolean isDockDefender) {
-        return null;
+        if (isDockDefender) {
+            return null;
+        }
+        final String action =
+                mContext.getString(R.string.config_battery_defender_resume_charge_action);
+        return TextUtils.isEmpty(action) ? null : new Intent(action);
     }
 
     @Override

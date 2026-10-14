@@ -837,6 +837,11 @@
     <!-- Whether checking adaptive charging to define battery manager visibility. -->
     <bool name="config_battery_manager_consider_ac">false</bool>
 
+    <!-- Broadcast action that resumes charging held by the device ("Charge to full" of the
+         battery defender tip). Sent by Settings, so receivers can require its permissions.
+         Empty: the button does nothing. -->
+    <string name="config_battery_defender_resume_charge_action" translatable="false"></string>
+
     <!-- Whether to display Cloned Apps page in Settings (Settings > Apps > Cloned Apps).-->
     <bool name="config_cloned_apps_page_enabled">false</bool>
 
