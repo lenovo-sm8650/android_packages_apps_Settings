@@ -105,4 +105,5 @@
 
     <!-- Uri to query non-public Slice Uris. -->
     <string name="config_non_public_slice_query_uri" translatable="false">content://com.android.settings.slices/test</string>
+    <string name="help_url_battery_defender" translatable="false">https://support.google.com/android</string>
 </resources>

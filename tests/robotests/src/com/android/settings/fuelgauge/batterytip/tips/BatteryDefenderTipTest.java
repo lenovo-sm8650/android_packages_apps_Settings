@@ -18,6 +18,7 @@ package com.android.settings.fuelgauge.batterytip.tips;
 import static com.google.common.truth.Truth.assertThat;
 
 import static org.mockito.ArgumentMatchers.eq;
+import static org.mockito.Mockito.never;
 import static org.mockito.Mockito.spy;
 import static org.mockito.Mockito.times;
 import static org.mockito.Mockito.verify;
@@ -46,6 +47,7 @@ import org.mockito.Mock;
 import org.mockito.junit.MockitoJUnit;
 import org.mockito.junit.MockitoRule;
 import org.robolectric.RobolectricTestRunner;
+import org.robolectric.annotation.Config;
 import org.robolectric.shadows.ShadowLog;
 
 @RunWith(RobolectricTestRunner.class)
@@ -108,6 +110,7 @@ public class BatteryDefenderTipTest {
     }
 
     @Test
+    @Config(qualifiers = "mcc999")
     public void updatePreference_shouldSetNegativeButtonText() {
         SpannableString expectedText =
                 Utils.createAccessibleSequence(
@@ -132,6 +135,7 @@ public class BatteryDefenderTipTest {
     }
 
     @Test
+    @Config(qualifiers = "mcc999")
     public void updatePreference_shouldSetNegativeButtonVisible() {
         mBatteryDefenderTip.updatePreference(mCardPreference);
 
@@ -139,6 +143,14 @@ public class BatteryDefenderTipTest {
     }
 
     @Test
+    public void updatePreference_withoutHelpUrl_negativeButtonNotVisible() {
+        mBatteryDefenderTip.updatePreference(mCardPreference);
+
+        verify(mCardPreference, never()).setNegativeButtonVisible(true);
+    }
+
+    @Test
+    @Config(qualifiers = "mcc999")
     public void updatePreference_whenCharging_SetNegativeButtonVisibleToBeTrue() {
         mBatteryDefenderTip =
                 new BatteryDefenderTip(BatteryTip.StateType.NEW, /* isPluggedIn= */ true);

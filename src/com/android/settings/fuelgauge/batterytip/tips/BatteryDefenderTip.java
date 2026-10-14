@@ -22,6 +22,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Parcel;
 import android.provider.Settings;
+import android.text.TextUtils;
 import android.util.Log;
 
 import androidx.core.app.ActivityCompat;
@@ -91,7 +92,8 @@ public class BatteryDefenderTip extends BatteryTip {
         }
 
         cardPreference.setSelectable(false);
-        if (getHelpResource() != 0) {
+        final String helpUri = context.getString(getHelpResource());
+        if (!TextUtils.isEmpty(helpUri)) {
             cardPreference.setNegativeButtonText(
                     Utils.createAccessibleSequence(
                             context.getString(R.string.learn_more),
@@ -101,9 +103,7 @@ public class BatteryDefenderTip extends BatteryTip {
                     unused -> {
                         var helpIntent =
                                 HelpUtils.getHelpIntent(
-                                        context,
-                                        context.getString(getHelpResource()),
-                                        /* backupContext= */ "");
+                                        context, helpUri, /* backupContext= */ "");
                         ActivityCompat.startActivityForResult(
                                 (Activity) preference.getContext(),
                                 helpIntent,
