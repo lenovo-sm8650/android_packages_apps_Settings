@@ -26,6 +26,7 @@ import android.content.Context;
 import android.content.pm.PackageManager;
 import android.os.Process;
 
+import com.android.settings.R;
 import com.android.settings.fuelgauge.batteryusage.BatteryAdvanceInfoController;
 import com.android.settings.fuelgauge.batteryusage.BatteryAdvanceInfoDialog;
 import com.android.settings.fuelgauge.batteryusage.DataProcessor;
@@ -208,6 +209,15 @@ public class PowerUsageFeatureProviderImplTest {
     @Test
     public void getResumeChargeIntentWithoutDockDefender_returnNull() {
         assertThat(mPowerFeatureProvider.getResumeChargeIntent(false)).isNull();
+    }
+
+    @Test
+    public void getResumeChargeIntentWithAction_returnIntent() {
+        when(mContext.getString(R.string.config_battery_defender_resume_charge_action))
+                .thenReturn("com.example.RESUME_CHARGING");
+
+        assertThat(mPowerFeatureProvider.getResumeChargeIntent(false).getAction())
+                .isEqualTo("com.example.RESUME_CHARGING");
     }
 
     @Test
