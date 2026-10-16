@@ -559,6 +559,26 @@ public abstract class DashboardFragment extends SettingsPreferenceFragment
     /**
      * Refresh preference items backed by DashboardCategory.
      */
+    /**
+     * The group of {@code tile}: its group key, unless
+     * config_homepage_tile_group_overrides moves the tile with its key hint
+     * ("key hint:group key") to another group.
+     */
+    @Nullable
+    private String getTileGroupKey(Tile tile) {
+        final String keyHint = tile.getKey(getContext());
+        if (keyHint != null) {
+            for (String entry : getResources().getStringArray(
+                    R.array.config_homepage_tile_group_overrides)) {
+                final int split = entry.indexOf(':');
+                if (split > 0 && keyHint.equals(entry.substring(0, split))) {
+                    return entry.substring(split + 1);
+                }
+            }
+        }
+        return tile.hasGroupKey() ? tile.getGroupKey() : null;
+    }
+
     protected void refreshDashboardTiles(final String tag) {
         final PreferenceScreen screen = getPreferenceScreen();
 
@@ -605,8 +625,9 @@ public abstract class DashboardFragment extends SettingsPreferenceFragment
                 observers = mDashboardFeatureProvider.bindPreferenceToTileAndGetObservers(
                         getActivity(), this, forceRoundedIcons, pref, tile, key,
                         mPlaceholderPreferenceController.getOrder());
-                if (tile.hasGroupKey()) {
-                    Preference group = screen.findPreference(tile.getGroupKey());
+                final String groupKey = getTileGroupKey(tile);
+                if (groupKey != null) {
+                    Preference group = screen.findPreference(groupKey);
                     if (group instanceof PreferenceCategory) {
                         ((PreferenceCategory) group).addPreference(pref);
                     } else {

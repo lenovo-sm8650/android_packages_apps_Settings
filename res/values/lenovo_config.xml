@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     SPDX-FileCopyrightText: 2026 The LineageOS Project
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources>
+    <!-- Homepage tiles moved to another group of top_level_settings_expressive,
+         as "key hint:group key". Digital Wellbeing joins the device feature
+         pages (TB520FUParts: pen & keyboard, advanced features). -->
+    <string-array name="config_homepage_tile_group_overrides" translatable="false">
+        <item>top_level_wellbeing:top_level_device_features_category</item>
+    </string-array>
+</resources>

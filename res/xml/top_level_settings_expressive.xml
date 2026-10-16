@@ -246,6 +246,14 @@
             settings:highlightableMenuKey="@string/menu_key_emergency"/>
     </com.android.settingslib.widget.UntitledPreferenceCategory>
 
+    <!-- Digital Wellbeing (moved here by config_homepage_tile_group_overrides),
+         then the injected device feature pages, like the stock Lenovo
+         settings. -->
+    <com.android.settingslib.widget.UntitledPreferenceCategory
+        android:order="-90"
+        android:key="top_level_device_features_category"
+        android:layout="@layout/settingslib_expressive_untitled_preference_category"/>
+
     <com.android.settingslib.widget.UntitledPreferenceCategory
         android:order="100"
         android:key="top_level_support_category"
