@@ -34,4 +34,6 @@
     <string name="lenovo_state_off">غير مفعّل</string>
     <string name="lenovo_wb_strength_title">الكثافة</string>
     <string name="lenovo_wb_strength_summary">مدى تتبّع الشاشة للإضاءة المحيطة.</string>
+    <string name="lenovo_highlight_mode_title">تحسين السطوع</string>
+    <string name="lenovo_highlight_mode_summary">إنها تعمل فقط في ضوء الشمس القوي لفترة قصيرة وقد تزيد من استهلاك البطارية أو تتسبب في ارتفاع درجة الحرارة.</string>
 </resources>

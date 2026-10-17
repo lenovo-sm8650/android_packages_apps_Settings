@@ -34,4 +34,6 @@
     <string name="lenovo_state_off">آف</string>
     <string name="lenovo_wb_strength_title">شدت</string>
     <string name="lenovo_wb_strength_summary">اسکرین ماحول کی روشنی کی کتنی پیروی کرتی ہے۔</string>
+    <string name="lenovo_highlight_mode_title">چمک میں اضافہ</string>
+    <string name="lenovo_highlight_mode_summary">یہ صرف تھوڑی دیر کے لیے تیز سورج کی روشنی میں کام کرتا ہے اور بیٹری کی کھپت کو بڑھا سکتا ہے یا زیادہ گرمی کا باعث بن سکتا ہے۔</string>
 </resources>

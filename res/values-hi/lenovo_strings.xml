@@ -34,4 +34,6 @@
     <string name="lenovo_state_off">बंद</string>
     <string name="lenovo_wb_strength_title">स्क्रीन की चमक</string>
     <string name="lenovo_wb_strength_summary">स्क्रीन आसपास की रोशनी का कितना अनुसरण करती है.</string>
+    <string name="lenovo_highlight_mode_title">चमक वृद्धि</string>
+    <string name="lenovo_highlight_mode_summary">यह केवल तेज धूप में कम समय के लिए काम करता है और इससे ज़्यादा बैटरी खर्च हो सकती है या होवरहीट हो सकती है.</string>
 </resources>

@@ -33,4 +33,6 @@
     <string name="lenovo_state_off">Dezactivat(ă)</string>
     <string name="lenovo_wb_strength_title">Intensitate</string>
     <string name="lenovo_wb_strength_summary">Cât de puternic urmărește ecranul lumina ambientală.</string>
+    <string name="lenovo_highlight_mode_title">Îmbunătăţire luminozitate</string>
+    <string name="lenovo_highlight_mode_summary">Funcţionează doar în lumină naturală puternică pentru o perioadă scurtă de timp şi poate să mărească consumul de baterie din cauza supraîncălzirii.</string>
 </resources>

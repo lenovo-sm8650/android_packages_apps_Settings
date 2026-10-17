@@ -33,4 +33,6 @@
     <string name="lenovo_state_off">Av</string>
     <string name="lenovo_wb_strength_title">Intensitet</string>
     <string name="lenovo_wb_strength_summary">Hvor sterkt skjermen følger omgivelseslyset.</string>
+    <string name="lenovo_highlight_mode_title">Forbedring av lysstyrken</string>
+    <string name="lenovo_highlight_mode_summary">Det fungerer bare i sterkt sollys i en kort periode og kan øke batteriforbruket eller forårsake overopphetning.</string>
 </resources>

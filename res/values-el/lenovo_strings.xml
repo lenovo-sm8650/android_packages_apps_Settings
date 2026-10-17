@@ -34,4 +34,6 @@
     <string name="lenovo_state_off">Ανενεργό</string>
     <string name="lenovo_wb_strength_title">Ένταση</string>
     <string name="lenovo_wb_strength_summary">Πόσο έντονα ακολουθεί η οθόνη το φως του περιβάλλοντος.</string>
+    <string name="lenovo_highlight_mode_title">Ενίσχυση φωτεινότητας</string>
+    <string name="lenovo_highlight_mode_summary">Λειτουργεί μόνο σε δυνατό ηλιακό φως για μικρό χρονικό διάστημα και μπορεί να αυξήσει την κατανάλωση της μπαταρίας ή να προκαλέσει υπερθέρμανση.</string>
 </resources>

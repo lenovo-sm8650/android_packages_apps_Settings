@@ -33,4 +33,6 @@
     <string name="lenovo_state_off">Kapalı</string>
     <string name="lenovo_wb_strength_title">Yoğunluk</string>
     <string name="lenovo_wb_strength_summary">Ekranın ortam ışığını ne kadar güçlü takip ettiği.</string>
+    <string name="lenovo_highlight_mode_title">Parlaklık artırma</string>
+    <string name="lenovo_highlight_mode_summary">Yalnızca güçlü güneş ışığı altında kısa bir süreyle çalışır ve pil tüketimini artırabilir veya aşırı ısınmaya neden olabilir.</string>
 </resources>

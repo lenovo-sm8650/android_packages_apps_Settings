@@ -34,4 +34,6 @@
     <string name="lenovo_state_off">Uit</string>
     <string name="lenovo_wb_strength_title">Intensiteit</string>
     <string name="lenovo_wb_strength_summary">Hoe sterk het scherm het omgevingslicht volgt.</string>
+    <string name="lenovo_highlight_mode_title">Verbetering helderheid</string>
+    <string name="lenovo_highlight_mode_summary">Het werkt slechts korte tijd in fel zonlicht en kan het batterijverbruik verhogen of oververhitting veroorzaken.</string>
 </resources>

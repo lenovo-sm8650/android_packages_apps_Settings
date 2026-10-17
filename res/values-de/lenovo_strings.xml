@@ -33,4 +33,6 @@
     <string name="lenovo_state_off">Aus</string>
     <string name="lenovo_wb_strength_title">Stärke</string>
     <string name="lenovo_wb_strength_summary">Wie stark sich der Bildschirm an das Umgebungslicht anpasst.</string>
+    <string name="lenovo_highlight_mode_title">Helligkeitsoptimierung</string>
+    <string name="lenovo_highlight_mode_summary">Es funktioniert nur für kurze Zeit bei starker Sonneneinstrahlung und kann den Akkuverbrauch erhöhen oder zu Überhitzung führen.</string>
 </resources>

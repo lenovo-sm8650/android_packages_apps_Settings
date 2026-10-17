@@ -34,4 +34,6 @@
     <string name="lenovo_state_off">Išjungta</string>
     <string name="lenovo_wb_strength_title">Intensyvumas</string>
     <string name="lenovo_wb_strength_summary">Kiek stipriai ekranas seka aplinkos šviesą.</string>
+    <string name="lenovo_highlight_mode_title">Ryškumo didinimas</string>
+    <string name="lenovo_highlight_mode_summary">Veikia trumpai ir tik ryškiai šviečiant saulei, gali padidėti akumuliatoriaus energijos naudojimas arba perkaisti.</string>
 </resources>

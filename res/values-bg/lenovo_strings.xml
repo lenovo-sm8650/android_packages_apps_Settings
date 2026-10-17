@@ -34,4 +34,6 @@
     <string name="lenovo_state_off">Изкл.</string>
     <string name="lenovo_wb_strength_title">Интензивност</string>
     <string name="lenovo_wb_strength_summary">Доколко екранът следва околната светлина.</string>
+    <string name="lenovo_highlight_mode_title">Подобряване на яркостта</string>
+    <string name="lenovo_highlight_mode_summary">Работи само при силна слънчева светлина за кратък период от време и може да увеличи консумацията на батерията или да причини прегряване.</string>
 </resources>

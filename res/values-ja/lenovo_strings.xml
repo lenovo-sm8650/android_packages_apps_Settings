@@ -34,4 +34,6 @@
     <string name="lenovo_state_off">オフ</string>
     <string name="lenovo_wb_strength_title">強さ</string>
     <string name="lenovo_wb_strength_summary" formatted="false">周囲の光に合わせて画面の色を変える度合いです。100%は標準のLenovo設定と同じです。</string>
+    <string name="lenovo_highlight_mode_title">明るさの改善</string>
+    <string name="lenovo_highlight_mode_summary">強い太陽光の下でのみ短時間動作しますが、バッテリーの消費量が増えたり過熱が発生したりします。</string>
 </resources>
