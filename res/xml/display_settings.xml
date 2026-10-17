@@ -209,6 +209,13 @@
             android:dependency="display_white_balance"
             settings:controller="com.android.settings.display.DisplayWhiteBalanceStrengthPreferenceController"/>
 
+        <!-- Sunlight high brightness mode (Lenovo), the stock "Brightness enhancement" switch -->
+        <SwitchPreferenceCompat
+            android:key="display_high_brightness_mode"
+            android:title="@string/lenovo_highlight_mode_title"
+            android:summary="@string/lenovo_highlight_mode_summary"
+            settings:controller="com.android.settings.display.DisplayHighBrightnessModePreferenceController"/>
+
         <SwitchPreferenceCompat
             android:key="peak_refresh_rate"
             android:title="@string/peak_refresh_rate_title"

@@ -34,4 +34,6 @@
     <string name="lenovo_state_off">Đang tắt</string>
     <string name="lenovo_wb_strength_title">Cường độ</string>
     <string name="lenovo_wb_strength_summary">Mức độ màn hình bám theo ánh sáng xung quanh.</string>
+    <string name="lenovo_highlight_mode_title">Tăng cường độ sáng</string>
+    <string name="lenovo_highlight_mode_summary">Chỉ hoạt động dưới ánh mặt trời mạnh trong thời gian ngắn và có thể tăng tiêu thụ pin hoặc gây quá nhiệt.</string>
 </resources>

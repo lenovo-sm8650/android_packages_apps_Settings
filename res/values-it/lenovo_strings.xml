@@ -34,4 +34,6 @@
     <string name="lenovo_state_off">Disattivato</string>
     <string name="lenovo_wb_strength_title">Intensità</string>
     <string name="lenovo_wb_strength_summary">Quanto lo schermo si adatta alla luce ambientale.</string>
+    <string name="lenovo_highlight_mode_title">Miglioramento luminosità</string>
+    <string name="lenovo_highlight_mode_summary">Funziona solo in condizioni di forte luce solare per un breve periodo di tempo e può aumentare il consumo della batteria o causare surriscaldamento.</string>
 </resources>

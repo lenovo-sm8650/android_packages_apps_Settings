@@ -34,4 +34,6 @@
     <string name="lenovo_state_off">Isključeno</string>
     <string name="lenovo_wb_strength_title">Intenzitet</string>
     <string name="lenovo_wb_strength_summary">Koliko zaslon slijedi svjetlost okoline.</string>
+    <string name="lenovo_highlight_mode_title">Poboljšanje svjetline</string>
+    <string name="lenovo_highlight_mode_summary">Funkcionira samo kada se na kratko razdoblje izloži jakoj svjetlosti te može uzrokovati veću potrošnju baterije ili pregrijavanje uređaja.</string>
 </resources>

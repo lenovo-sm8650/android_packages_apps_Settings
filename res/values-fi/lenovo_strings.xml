@@ -34,4 +34,6 @@
     <string name="lenovo_state_off">Ei päällä</string>
     <string name="lenovo_wb_strength_title">Voimakkuus</string>
     <string name="lenovo_wb_strength_summary">Kuinka voimakkaasti näyttö seuraa ympäristön valoa.</string>
+    <string name="lenovo_highlight_mode_title">Kirkkauden parannus</string>
+    <string name="lenovo_highlight_mode_summary">Se toimii vain voimakkaassa auringonvalossa hetkisen ja saattaa lisätä virrankulutusta tai aiheuttaa ylikuumenemisen.</string>
 </resources>

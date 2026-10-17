@@ -34,4 +34,6 @@
     <string name="lenovo_state_off">Вимкнено</string>
     <string name="lenovo_wb_strength_title">Інтенсивність</string>
     <string name="lenovo_wb_strength_summary">Наскільки сильно екран реагує на навколишнє освітлення.</string>
+    <string name="lenovo_highlight_mode_title">Підвищення яскравості</string>
+    <string name="lenovo_highlight_mode_summary">Ця функція працює лише під інтенсивним сонячним випроміненням протягом короткого часу й може збільшити споживання заряду батареї або спричинити перегрівання.</string>
 </resources>

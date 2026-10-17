@@ -34,4 +34,6 @@
     <string name="lenovo_state_off">Vypnuto</string>
     <string name="lenovo_wb_strength_title">Intenzita</string>
     <string name="lenovo_wb_strength_summary">Jak silně se obrazovka řídí okolním světlem.</string>
+    <string name="lenovo_highlight_mode_title">Vylepšení jasu</string>
+    <string name="lenovo_highlight_mode_summary">Na silném slunečním světle funguje pouze krátkou dobu a může se zvýšit spotřeba baterie nebo dojít k přehřívání.</string>
 </resources>

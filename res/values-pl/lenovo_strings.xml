@@ -34,4 +34,6 @@
     <string name="lenovo_state_off">Wył.</string>
     <string name="lenovo_wb_strength_title">Intensywność</string>
     <string name="lenovo_wb_strength_summary">Jak mocno ekran podąża za światłem otoczenia.</string>
+    <string name="lenovo_highlight_mode_title">Zwiększenie jasności</string>
+    <string name="lenovo_highlight_mode_summary">Działa tylko w silnym świetle słonecznym i przez krótki czas oraz może zwiększyć zużycie baterii lub spowodować przegrzanie.</string>
 </resources>

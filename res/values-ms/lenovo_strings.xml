@@ -34,4 +34,6 @@
     <string name="lenovo_state_off">Mati</string>
     <string name="lenovo_wb_strength_title">Keamatan</string>
     <string name="lenovo_wb_strength_summary">Sejauh mana skrin mengikut cahaya persekitaran.</string>
+    <string name="lenovo_highlight_mode_title">Peningkatan kecerahan</string>
+    <string name="lenovo_highlight_mode_summary">Hanya berfungsi di bawah cahaya matahari yang terik untuk tempoh masa yang pendek dan mungkin meningkatkan penggunaan bateri atau menyebabkan pemanasan melampau.</string>
 </resources>

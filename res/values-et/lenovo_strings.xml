@@ -34,4 +34,6 @@
     <string name="lenovo_state_off">Väljas</string>
     <string name="lenovo_wb_strength_title">Intensiivsus</string>
     <string name="lenovo_wb_strength_summary">Kui tugevalt ekraan järgib ümbritsevat valgust.</string>
+    <string name="lenovo_highlight_mode_title">Ereduse täiustamine</string>
+    <string name="lenovo_highlight_mode_summary">See töötab tugeva päikesevalguse käes ainult lühikese aja jooksul ja võib suurendada aku tarbimist või põhjustada ülekuumenemise.</string>
 </resources>

@@ -33,4 +33,6 @@
     <string name="lenovo_state_off">Nonaktif</string>
     <string name="lenovo_wb_strength_title">Intensitas</string>
     <string name="lenovo_wb_strength_summary">Seberapa kuat layar mengikuti cahaya sekitar.</string>
+    <string name="lenovo_highlight_mode_title">Peningkatan kecerahan</string>
+    <string name="lenovo_highlight_mode_summary">Ini hanya akan berfungsi sebentar jika digunakan di bawah sinar matahari yang terik. Konsumsi baterai juga dapat meningkat atau menyebabkan panas berlebih.</string>
 </resources>

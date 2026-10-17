@@ -34,4 +34,6 @@
     <string name="lenovo_state_off">מושבת</string>
     <string name="lenovo_wb_strength_title">עוצמה</string>
     <string name="lenovo_wb_strength_summary">עד כמה המסך עוקב אחר אור הסביבה.</string>
+    <string name="lenovo_highlight_mode_title">שיפור בהירות</string>
+    <string name="lenovo_highlight_mode_summary">הוא פועל רק באור שמש חזק לתקופת זמן קצרה ועלול להעלות את צריכת הסוללה או לגרום להתחממות יתר.</string>
 </resources>

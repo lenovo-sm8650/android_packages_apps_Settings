@@ -36,4 +36,6 @@
     <string name="lenovo_range_value" formatted="false">%1$d%% – %2$d%%</string>
     <string name="lenovo_wb_strength_title">Strength</string>
     <string name="lenovo_wb_strength_summary">How strongly the screen follows the ambient light.</string>
+    <string name="lenovo_highlight_mode_title">Brightness enhancement</string>
+    <string name="lenovo_highlight_mode_summary">It only works in strong sunlight for a short period of time and may increase battery consumption or cause overheat.</string>
 </resources>

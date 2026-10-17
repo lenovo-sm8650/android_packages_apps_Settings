@@ -33,4 +33,6 @@
     <string name="lenovo_state_off">Naka-off</string>
     <string name="lenovo_wb_strength_title">Intensity</string>
     <string name="lenovo_wb_strength_summary">Gaano kalakas sinusundan ng screen ang ambient light.</string>
+    <string name="lenovo_highlight_mode_title">Pag-enhance sa liwanag</string>
+    <string name="lenovo_highlight_mode_summary">Gumagana lang ito kapag matindi ang sikat ng araw sa loob ng maikling panahon at puwedeng mapalakas ang pagkonsumo ng baterya o magdulot ng pag-overheat.</string>
 </resources>

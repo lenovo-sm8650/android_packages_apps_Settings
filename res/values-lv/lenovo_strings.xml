@@ -34,4 +34,6 @@
     <string name="lenovo_state_off">Izslēgta</string>
     <string name="lenovo_wb_strength_title">Intensitāte</string>
     <string name="lenovo_wb_strength_summary">Cik spēcīgi ekrāns seko apkārtējam apgaismojumam.</string>
+    <string name="lenovo_highlight_mode_title">Spilgtuma uzlabošana</string>
+    <string name="lenovo_highlight_mode_summary">Tas darbojas tikai īsu laiku spēcīgos saules staros un var palielināt akumulatora enerģijas patēriņu vai izraisīt pārkaršanu.</string>
 </resources>

@@ -23,4 +23,6 @@
     <string name="lenovo_bypass_once_summary">Desligar automaticamente depois de a alimentação ser desligada</string>
     <string name="lenovo_bypass_range_category">Definição do nível da bateria</string>
     <string name="lenovo_bypass_footer">Se o nível atual da bateria estiver abaixo do limite inferior, o dispositivo será carregado até ao limite superior na ativação inicial para garantir a autonomia da bateria.</string>
+    <string name="lenovo_highlight_mode_title">Melhoria do brilho</string>
+    <string name="lenovo_highlight_mode_summary">Funciona apenas com luz solar forte durante um curto período de tempo e pode aumentar o consumo da bateria ou provocar sobreaquecimento.</string>
 </resources>

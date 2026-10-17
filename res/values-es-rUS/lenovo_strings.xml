@@ -23,4 +23,6 @@
     <string name="lenovo_bypass_once_summary">Apagar automáticamente una vez que se desconecte la corriente</string>
     <string name="lenovo_bypass_range_category">Ajuste del nivel de batería</string>
     <string name="lenovo_bypass_footer">Si el nivel actual de batería está por debajo del límite inferior, el dispositivo se cargará hasta el límite superior al activarse inicialmente para garantizar la duración de la batería.</string>
+    <string name="lenovo_highlight_mode_title">Mejora del brillo</string>
+    <string name="lenovo_highlight_mode_summary">Solo funciona bajo luz solar intensa durante un breve período y puede aumentar el consumo de la batería o provocar sobrecalentamiento.</string>
 </resources>

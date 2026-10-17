@@ -34,4 +34,6 @@
     <string name="lenovo_state_off">Ki</string>
     <string name="lenovo_wb_strength_title">Intenzitás</string>
     <string name="lenovo_wb_strength_summary">Mennyire követi a képernyő a környezeti fényt.</string>
+    <string name="lenovo_highlight_mode_title">Fényerő fokozása</string>
+    <string name="lenovo_highlight_mode_summary">Erős napfény esetén csak rövid ideig működik, és az ilyen körülmények az akkumulátor megnövekedett fogyasztását, illetve túlmelegedést okozhatnak.</string>
 </resources>

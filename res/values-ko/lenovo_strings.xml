@@ -34,4 +34,6 @@
     <string name="lenovo_state_off">사용 안함</string>
     <string name="lenovo_wb_strength_title">강도</string>
     <string name="lenovo_wb_strength_summary">주변 조명에 따라 화면 색을 바꾸는 정도입니다.</string>
+    <string name="lenovo_highlight_mode_title">밝기 향상</string>
+    <string name="lenovo_highlight_mode_summary">짧은 시간 동안 강한 햇볕에서만 작동하며 배터리 소모가 증가하거나 과열이 발생할 수 있습니다.</string>
 </resources>

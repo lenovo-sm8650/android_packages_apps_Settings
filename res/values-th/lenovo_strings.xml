@@ -34,4 +34,6 @@
     <string name="lenovo_state_off">ปิด</string>
     <string name="lenovo_wb_strength_title">ความเข้ม</string>
     <string name="lenovo_wb_strength_summary">ระดับที่หน้าจอปรับตามแสงรอบข้าง</string>
+    <string name="lenovo_highlight_mode_title">การเพิ่มประสิทธิภาพความสว่าง</string>
+    <string name="lenovo_highlight_mode_summary">ใช้งานได้เฉพาะในแสงแดดจัดในช่วงเวลาสั้นๆ และอาจเพิ่มการใช้แบตเตอรี่หรือทำให้เกิดความร้อนสูงเกินไป</string>
 </resources>
