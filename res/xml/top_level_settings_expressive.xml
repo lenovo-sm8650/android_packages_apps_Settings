@@ -246,6 +246,13 @@
             settings:highlightableMenuKey="@string/menu_key_emergency"/>
     </com.android.settingslib.widget.UntitledPreferenceCategory>
 
+    <!-- The injected device feature pages (LenovoParts: pen & keyboard,
+         advanced features), like the stock Lenovo settings. -->
+    <com.android.settingslib.widget.UntitledPreferenceCategory
+        android:order="-90"
+        android:key="top_level_device_features_category"
+        android:layout="@layout/settingslib_expressive_untitled_preference_category"/>
+
     <com.android.settingslib.widget.UntitledPreferenceCategory
         android:order="100"
         android:key="top_level_support_category"
