@@ -6414,7 +6414,7 @@
 
         <!-- Lenovo PenService opens its pen settings through the stock Lenovo
              settings action (stylus toolbox). On a large screen embed the page
-             next to the Settings home; otherwise open it directly (TB520FU). -->
+             next to the Settings home; otherwise open it directly. -->
         <activity android:name=".lenovo.LenovoPlaceHolderActivity"
             android:exported="true"
             android:excludeFromRecents="true"
