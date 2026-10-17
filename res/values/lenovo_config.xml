@@ -6,7 +6,7 @@
 <resources>
     <!-- Homepage tiles moved to another group of top_level_settings_expressive,
          as "key hint:group key". Digital Wellbeing joins the device feature
-         pages (TB520FUParts: pen & keyboard, advanced features). -->
+         pages (LenovoParts: pen & keyboard, advanced features). -->
     <string-array name="config_homepage_tile_group_overrides" translatable="false">
         <item>top_level_wellbeing:top_level_device_features_category</item>
     </string-array>
