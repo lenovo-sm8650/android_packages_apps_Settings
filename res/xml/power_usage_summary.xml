@@ -95,20 +95,66 @@
 
     <!-- Lenovo battery controls, like the stock ZUI Settings; hidden unless
          config_lenovo_battery_features is set -->
-    <com.android.settingslib.widget.UntitledPreferenceCategory
-        android:key="lenovo_battery_category">
-        <Preference
-            android:key="lenovo_charging_optimization"
-            android:title="@string/lenovo_charging_optimization_title"
-            android:fragment="com.android.settings.lenovo.LenovoChargingSettings"
-            settings:controller="com.android.settings.lenovo.LenovoBatteryPreferenceController" />
+    <PreferenceCategory
+        android:key="lenovo_charging"
+        android:title="@string/lenovo_charging_category"
+        settings:controller="com.android.settings.lenovo.LenovoChargingModePreferenceController"
+        settings:searchable="false">
+        <com.android.settingslib.widget.SelectorWithWidgetPreference
+            android:key="lenovo_charging_normal"
+            android:title="@string/lenovo_charging_normal_title"
+            android:summary="@string/lenovo_charging_normal_summary"
+            android:persistent="false"
+            settings:searchable="false" />
+
+        <com.android.settingslib.widget.SelectorWithWidgetPreference
+            android:key="lenovo_charging_limit"
+            android:title="@string/lenovo_charging_limit_title"
+            android:summary="@string/lenovo_charging_limit_summary"
+            android:persistent="false"
+            settings:searchable="false" />
+
+        <com.android.settingslib.widget.SelectorWithWidgetPreference
+            android:key="lenovo_charging_protect"
+            android:title="@string/lenovo_charging_protect_title"
+            android:summary="@string/lenovo_charging_protect_summary"
+            android:persistent="false"
+            settings:searchable="false" />
 
         <Preference
-            android:key="lenovo_battery_more"
-            android:title="@string/lenovo_battery_more_title"
-            android:fragment="com.android.settings.lenovo.LenovoBatteryMoreSettings"
-            settings:controller="com.android.settings.lenovo.LenovoBatteryPreferenceController" />
-    </com.android.settingslib.widget.UntitledPreferenceCategory>
+            android:key="lenovo_bypass_charging"
+            android:title="@string/lenovo_bypass_title"
+            android:fragment="com.android.settings.lenovo.LenovoBypassChargingSettings"
+            settings:controller="com.android.settings.lenovo.LenovoBypassChargingPreferenceController"
+            settings:searchable="false" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="lenovo_battery"
+        android:title="@string/lenovo_battery_category"
+        settings:controller="com.android.settings.lenovo.LenovoBatteryPreferenceController"
+        settings:searchable="false">
+        <com.android.settings.custom.preference.GlobalSettingSwitchPreference
+            android:key="lenovo_standby_saver"
+            android:title="@string/lenovo_standby_title"
+            android:summary="@string/lenovo_standby_summary"
+            android:defaultValue="true"
+            settings:searchable="false" />
+
+        <com.android.settings.custom.preference.GlobalSettingSwitchPreference
+            android:key="battery_maintenance_on"
+            android:title="@string/lenovo_battery_maintenance_title"
+            android:summary="@string/lenovo_battery_maintenance_summary"
+            android:defaultValue="true"
+            settings:searchable="false" />
+
+        <Preference
+            android:key="lenovo_battery_info"
+            android:title="@string/lenovo_battery_info_title"
+            android:selectable="false"
+            settings:controller="com.android.settings.lenovo.LenovoBatteryInfoPreferenceController"
+            settings:searchable="false" />
+    </PreferenceCategory>
 
     <com.android.settingslib.widget.FooterPreference
         android:key="power_usage_footer"
