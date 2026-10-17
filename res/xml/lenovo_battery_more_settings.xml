@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     SPDX-FileCopyrightText: 2026 The LineageOS Project
+     SPDX-License-Identifier: Apache-2.0
+-->
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:title="@string/lenovo_battery_more_title">
+
+    <com.android.settings.custom.preference.GlobalSettingSwitchPreference
+        android:key="lenovo_standby_saver"
+        android:title="@string/lenovo_standby_title"
+        android:summary="@string/lenovo_standby_summary"
+        android:defaultValue="true" />
+
+    <PreferenceCategory android:key="lenovo_bypass_category">
+
+        <Preference
+            android:key="lenovo_bypass_charging"
+            android:title="@string/lenovo_bypass_title"
+            android:fragment="com.android.settings.lenovo.LenovoBypassChargingSettings" />
+
+    </PreferenceCategory>
+</PreferenceScreen>

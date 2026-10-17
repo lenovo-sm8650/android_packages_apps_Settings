@@ -1105,4 +1105,9 @@
     <!-- Whether Settings > Display shows the display white balance switch. A device can
          turn it off when it offers the setting elsewhere. -->
     <bool name="config_show_display_white_balance">true</bool>
+
+    <!-- Whether the device has the Lenovo battery controls (charging mode, battery
+         maintenance, standby saver, bypass charging) on Settings > Battery. They are
+         applied by lenovo-input and only a Lenovo device overlay turns them on. -->
+    <bool name="config_lenovo_battery_features">false</bool>
 </resources>

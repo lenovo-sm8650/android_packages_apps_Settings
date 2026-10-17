@@ -93,6 +93,23 @@
         android:title="@*android:string/charging_speed"
         settings:controller="com.android.settings.fuelgauge.ChargingSpeedPreferenceController" />
 
+    <!-- Lenovo battery controls, like the stock ZUI Settings; hidden unless
+         config_lenovo_battery_features is set -->
+    <com.android.settingslib.widget.UntitledPreferenceCategory
+        android:key="lenovo_battery_category">
+        <Preference
+            android:key="lenovo_charging_optimization"
+            android:title="@string/lenovo_charging_optimization_title"
+            android:fragment="com.android.settings.lenovo.LenovoChargingSettings"
+            settings:controller="com.android.settings.lenovo.LenovoBatteryPreferenceController" />
+
+        <Preference
+            android:key="lenovo_battery_more"
+            android:title="@string/lenovo_battery_more_title"
+            android:fragment="com.android.settings.lenovo.LenovoBatteryMoreSettings"
+            settings:controller="com.android.settings.lenovo.LenovoBatteryPreferenceController" />
+    </com.android.settingslib.widget.UntitledPreferenceCategory>
+
     <com.android.settingslib.widget.FooterPreference
         android:key="power_usage_footer"
         android:title="@string/battery_footer_summary"

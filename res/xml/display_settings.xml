@@ -201,6 +201,14 @@
             android:summary="@string/display_white_balance_summary"
             settings:controller="com.android.settings.display.DisplayWhiteBalancePreferenceController"/>
 
+        <!-- Strength of the white balance (Lenovo framework patch), right after its switch -->
+        <com.android.settingslib.widget.SliderPreference
+            android:key="display_white_balance_strength"
+            android:title="@string/lenovo_wb_strength_title"
+            android:summary="@string/lenovo_wb_strength_summary"
+            android:dependency="display_white_balance"
+            settings:controller="com.android.settings.display.DisplayWhiteBalanceStrengthPreferenceController"/>
+
         <SwitchPreferenceCompat
             android:key="peak_refresh_rate"
             android:title="@string/peak_refresh_rate_title"
