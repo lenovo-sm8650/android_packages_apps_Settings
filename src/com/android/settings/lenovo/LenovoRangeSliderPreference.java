@@ -6,6 +6,7 @@
 package com.android.settings.lenovo;
 
 import android.content.Context;
+import android.content.res.ColorStateList;
 import android.util.AttributeSet;
 import android.widget.TextView;
 
@@ -13,7 +14,6 @@ import androidx.preference.Preference;
 import androidx.preference.PreferenceViewHolder;
 
 import com.android.settings.R;
-import com.android.settingslib.Utils;
 import com.google.android.material.slider.RangeSlider;
 
 /**
@@ -66,12 +66,13 @@ public class LenovoRangeSliderPreference extends Preference {
 
     @Override
     public void onBindViewHolder(PreferenceViewHolder holder) {
+        TextView title = (TextView) holder.findViewById(android.R.id.title);
+        ColorStateList titleColors = title.getTextColors();
         super.onBindViewHolder(holder);
         // androidx paints the title of an enabled, non-selectable preference in the summary
-        // colour, so it looked disabled; keep the normal title colour (its disabled state
-        // follows the view state).
-        ((TextView) holder.findViewById(android.R.id.title)).setTextColor(
-                Utils.getColorAttr(getContext(), android.R.attr.textColorPrimary));
+        // colour, so it looked disabled; keep the title colours of the layout, which dim
+        // while the preference is disabled.
+        title.setTextColor(titleColors);
         TextView summary = (TextView) holder.findViewById(android.R.id.summary);
         ((TextView) holder.findViewById(R.id.range_start)).setText(percent(mFrom));
         ((TextView) holder.findViewById(R.id.range_end)).setText(percent(mTo));

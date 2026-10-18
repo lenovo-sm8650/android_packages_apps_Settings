@@ -29,8 +29,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAlignment="viewStart"
-        android:textAppearance="?android:attr/textAppearanceListItemSecondary"
-        android:textColor="?android:attr/textColorSecondary" />
+        android:textAppearance="?android:attr/textAppearanceListItemSecondary" />
 
     <com.google.android.material.slider.RangeSlider
         android:id="@+id/range_slider"
@@ -50,15 +49,13 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:textAlignment="viewStart"
-            android:textAppearance="?android:attr/textAppearanceListItemSecondary"
-            android:textColor="?android:attr/textColorSecondary" />
+            android:textAppearance="?android:attr/textAppearanceListItemSecondary" />
 
         <TextView
             android:id="@+id/range_end"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAlignment="viewEnd"
-            android:textAppearance="?android:attr/textAppearanceListItemSecondary"
-            android:textColor="?android:attr/textColorSecondary" />
+            android:textAppearance="?android:attr/textAppearanceListItemSecondary" />
     </LinearLayout>
 </LinearLayout>
