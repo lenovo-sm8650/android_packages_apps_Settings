@@ -25,6 +25,13 @@ import android.view.Display;
 
 public class HdrBrightnessUtils {
     static int getAvailabilityStatus(Context context) {
+        // Under the ZUI auto brightness the HDR/SDR ratio map of display_hdr.xml drives the
+        // doubled backlight of SDR content; the LCD has no HDR brightness boost to adjust, and
+        // stock ZUI has no such setting.
+        if (context.getResources().getBoolean(
+                com.android.internal.R.bool.config_zuiAutoBrightness)) {
+            return UNSUPPORTED_ON_DEVICE;
+        }
         DisplayManager dm = context.getSystemService(DisplayManager.class);
         for (Display display : dm.getDisplays(
                 DisplayManager.DISPLAY_CATEGORY_ALL_INCLUDING_DISABLED)) {
