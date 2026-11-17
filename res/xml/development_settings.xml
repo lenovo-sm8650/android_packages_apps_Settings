@@ -650,23 +650,11 @@
             android:title="@string/enable_webapp_minter_title"
             android:summary="@string/enable_webapp_minter_summary" />
 
-        <!-- Spoofing toggle -->
-        <SwitchPreferenceCompat
-            android:key="certified_props"
-            android:title="@string/cert_overlay_title"
-            android:summary="@string/cert_overlay_summary" />
-
-        <com.android.settings.development.KeyboxDataPreference
-            android:key="keybox_data_setting"
-            android:title="@string/keybox_data_title"
-            android:summary="@string/keybox_data_summary"
-            android:defaultValue=""/>
-
-        <com.android.settings.development.PifDataPreference
-            android:key="pif_data_setting"
-            android:title="@string/pif_data_title"
-            android:summary="@string/pif_data_summary"
-            android:defaultValue=""/>
+        <Preference
+            android:key="spoofing_settings"
+            android:title="@string/spoofing_title"
+            android:summary="@string/spoofing_summary"
+            android:fragment="com.android.settings.development.spoof.SpoofingSettings" />
 
     </PreferenceCategory>
 
