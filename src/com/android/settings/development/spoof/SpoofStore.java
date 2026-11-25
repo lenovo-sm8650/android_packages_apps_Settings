@@ -282,9 +282,8 @@ final class SpoofStore {
                 && !xml.contains("<Key algorithm=\"rsa\">")) {
             return "No ECDSA or RSA key block";
         }
-        if (!xml.contains("<serial>") && !xml.contains("DeviceID")) {
-            return "No serial or DeviceID";
-        }
+        // No DeviceID or <serial> needed: it only names the keybox, which its
+        // certificates identify (TrickyStore takes such a keybox too)
         KeyBoxManager manager = new KeyBoxManager();
         if (!manager.parseKeybox(xml) || !manager.hasKeyboxes()) {
             return "Not a valid keybox";
