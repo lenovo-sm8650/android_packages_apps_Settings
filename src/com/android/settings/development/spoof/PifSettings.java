@@ -147,7 +147,7 @@ public class PifSettings extends DashboardFragment implements DeveloperOptionAwa
             pref.setEnabled(hasConfig);
             pref.setChecked(SpoofStore.flagOn(config, FLAGS[i], FLAG_DEFAULTS[i]));
         }
-        String finger = config.optString("spoofVendingFinger", "0");
+        String finger = config.optString("spoofVendingFinger", "1");
         SwitchPreferenceCompat fingerPref = findPreference("spoofVendingFinger");
         if (fingerPref != null) {
             fingerPref.setEnabled(hasConfig);
